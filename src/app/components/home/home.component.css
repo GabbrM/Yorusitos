@@ -1,0 +1,63 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.example-card {
+  width: 80%;
+  margin: 20px 0;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.example-header-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mat-card-content .buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.mat-card-content .buttons .like-button {
+  display: flex;
+  align-items: center;
+}
+
+.mat-card-content .buttons .like-button button {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.mat-card-content .buttons .like-button span {
+  margin-right: 4px;
+}
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.comment-button {
+  white-space: nowrap;
+  background-color: black !important;
+
+}

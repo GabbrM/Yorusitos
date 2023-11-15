@@ -1,0 +1,32 @@
+<div *ngIf="user">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>User Profile</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon mat-list-icon>person</mat-icon>
+          <h3 mat-line>{{ user.username }}</h3>
+          <p mat-line>Username</p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon mat-list-icon>account_circle</mat-icon>
+          <h3 mat-line>{{ user.name }}</h3>
+          <p mat-line>Name</p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon mat-list-icon>email</mat-icon>
+          <h3 mat-line>{{ user.email }}</h3>
+          <p mat-line>Email</p>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- Agrega la función de logout en el evento click -->
+      <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,49 @@
+<div class="content">
+  <mat-card class="example-card" *ngFor="let post of posts">
+    <img mat-card-image [src]="post.image" alt="Image">
+    <mat-card-content>
+      <!-- Post description -->
+      <div class="post-description">
+        <h3>{{ post.title }}</h3>
+        <p class="subtitle">{{ post.date }} - {{ post.location }}</p>
+        <p>{{ post.description }}</p>
+      </div>
+
+      <!-- Like and comment buttons -->
+      <div class="buttons">
+        <button mat-icon-button (click)="likePost(post)">
+          <mat-icon>thumb_up</mat-icon>
+          <span>{{ post.likes }}</span>
+        </button>
+        <button mat-icon-button (click)="toggleComments(post)">
+          <mat-icon>mode_comment</mat-icon>
+        </button>
+      </div>
+      <br><br>
+
+      <!-- Comment section -->
+      <div *ngIf="post.showComments">
+        <div *ngIf="post.comments && post.comments.length > 0">
+          <!-- Display comments -->
+          <h4>Comentarios:</h4>
+          <div *ngFor="let comment of post.comments">
+            <ng-container *ngIf="comment.postId === post._id">
+              <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
+            </ng-container>
+          </div>
+        </div>
+
+        <!-- Comment form -->
+        <form *ngIf="post.showComments" (ngSubmit)="addComment(post)" #commentForm="ngForm" class="comment-form">
+          <mat-form-field appearance="fill" class="comment-input">
+            <input matInput type="text" placeholder="Tu comentario" name="text" [(ngModel)]="newComment.text" required>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit" class="comment-button">Enviar</button>
+        </form>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <br>
+  <br>
+  <br>
+</div>

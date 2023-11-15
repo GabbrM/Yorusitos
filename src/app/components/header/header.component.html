@@ -1,0 +1,12 @@
+<div class="nav" style="width: 100%;">
+  <mat-toolbar color="primary" class="toolbar-custom">
+    <h1><a routerLink="/"><img src="assets/img/Yorusitos.png" alt="Logo Yorusitos"></a></h1>
+    <button *ngIf="canAddPost()" mat-raised-button color="primary" class="custom-button" (click)="goToAddPost()">Crear Post</button>
+    <div class="user-menu">
+      <a *ngIf="!isAuthenticated" (click)="goToLogin()">Iniciar sesión</a>
+      <a *ngIf="isAuthenticated" (click)="goToProfileOrLogin()">
+        <fa-icon [icon]="iconProfile" class="fa-2x icon-grey"></fa-icon>
+      </a>
+    </div>
+  </mat-toolbar>
+</div>

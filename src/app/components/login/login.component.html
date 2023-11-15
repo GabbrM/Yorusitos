@@ -1,0 +1,16 @@
+<div class="logo">
+  <img src="assets/img/Yorusitos.png" alt="Logo de tu aplicación" width="250" height="175">
+</div>
+
+<div class="login-container">
+  <form (ngSubmit)="login()" class="custom-form">
+    <div class="form-group">
+      <input type="text" placeholder="Nombre de usuario" name="username" [(ngModel)]="user.username" required>
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Contraseña" name="password" [(ngModel)]="user.password" required>
+    </div>
+    <button type="submit">Iniciar sesión</button>
+    <p class="signup-link">¿No tienes una cuenta? <a routerLink="/register">Regístrate</a></p>
+  </form>
+</div>

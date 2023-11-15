@@ -1,0 +1,56 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-container {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.custom-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-form button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-form button:hover {
+  background-color: #0056b3;
+}
+
+.signup-link {
+  font-size: 14px;
+  margin-top: 10px;
+}

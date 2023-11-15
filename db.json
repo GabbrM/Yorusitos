@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Evento de Debate de Ciencias Políticas",
+      "description": "¡Únete a nuestro evento de debate! Exploraremos temas actuales de la política mundial.",
+      "date": "2023-11-10",
+      "location": "Aula Magna",
+      "image": "https://via.placeholder.com/300",
+      "likes": 25
+    },
+    {
+      "id": 2,
+      "title": "Club de Fotografía: Salida al Campo",
+      "description": "¡Ven y mejora tus habilidades fotográficas! Nos dirigiremos al parque para una sesión de fotos.",
+      "date": "2023-11-15",
+      "location": "Parque Central",
+      "image": "https://via.placeholder.com/300",
+      "likes": 30
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 1,
+      "text": "¡Estoy emocionada por este evento!"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 2,
+      "text": "¿Habrá comida gratis?"
+    },
+    {
+      "id": 3,
+      "postId": 1,
+      "userId": 0,
+      "user": "sasda",
+      "text": "asdas"
+    },
+    {
+      "id": 4,
+      "postId": 1,
+      "userId": 0,
+      "user": "Gabriel",
+      "text": "probando"
+    },
+    {
+      "id": 5,
+      "postId": 1,
+      "userId": 0,
+      "user": "gaaaa",
+      "text": "jeje"
+    },
+    {
+      "id": 6,
+      "postId": 1,
+      "userId": 0,
+      "user": "",
+      "text": "hola"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "username": "invitado",
+      "name": "Invitado",
+      "email": "Invitado@example.com",
+      "password": "Invitado"
+    },
+    {
+      "id": 1,
+      "username": "alice_24",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "alice123"
+    },
+    {
+      "id": 2,
+      "username": "bob_88",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "password": "bob456"
+    }
+  ]
+}

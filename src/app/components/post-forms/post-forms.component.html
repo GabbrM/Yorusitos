@@ -1,0 +1,32 @@
+<form [formGroup]="formulario" (ngSubmit)="submitForm()" class="formulario">  <mat-form-field>
+    <mat-label>Título</mat-label>
+    <input matInput formControlName="title" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripción</mat-label>
+    <textarea matInput formControlName="description" required></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Fecha</mat-label>
+    <input matInput type="date" formControlName="date" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Ubicación</mat-label>
+    <input matInput formControlName="location" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Imagen</mat-label>
+    <input matInput formControlName="image">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Likes</mat-label>
+    <input matInput type="number" formControlName="likes">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Guardar</button>
+</form>

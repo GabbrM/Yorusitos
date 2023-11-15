@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.toolbar-custom {
+  background-color: black !important;
+}
+
+.nav img {
+  width: 75px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin-left: auto;
+}
+.nav .custom-button {
+  background-color: red !important;
+  color: white !important;
+  margin-left: auto;
+  margin-right: 20px;
+  position: absolute;
+  right: 60px;
+}
